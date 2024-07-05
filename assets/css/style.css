@@ -6119,7 +6119,7 @@ body:not(.top-search-open)
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url('/assets/img/slider/slider-final.png');
+  background-image: url('/assets/img/interoperabilidad/SLIDER\ 01.png');
   background-size:cover;
 }
 
@@ -6129,7 +6129,7 @@ body:not(.top-search-open)
 
 @media (max-width:400px){
   .slider-element {
-    background-image: url('/assets/img/slider/slider-home-movil.png');
+    background-image: url('/assets/img/interoperabilidad/SLIDER\ 01.png');
     background-size: 100%;
     background-repeat: no-repeat;
   }
