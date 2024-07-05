@@ -19837,3 +19837,31 @@ label.checkbox {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.bg-white-green{
+  background-color: #fff;
+  transition: 0.5s all ease;
+}
+
+.bg-white-green:hover{
+  background-color: #00af87;
+}
+
+
+.bg-white-green:hover .text-titles{
+  color: #fff!important;
+}
+
+.bg-white-green:hover p{
+  color: #fff!important;
+}
+
+.carousel-control-prev-icon {
+  background-color: #00af87;
+  margin-right: 170px;
+}
+
+.carousel-control-next-icon{
+  background-color: #00af87;
+  margin-left: 170px;
+}
