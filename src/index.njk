@@ -20,8 +20,8 @@ permalink: "index.html"
 			<div class="container" style="padding: 20px 0;">
                 <div class="row my-6 align-items-center">
                     <div class="col-lg-6 my-4">
-                        <h1 class="text-titles" style="font-size: 60px!important;line-height: 60px;">Plataforma de Interoperabilidad</h1>
-                        <p class="my-4" style="font-size: 25px!important;">La plataforma de interoperabilidad que nos permitirá <br>
+                        <h1 class="text-titles" style="font-size: 60px!important;line-height: 60px;">Laboratorio de Interoperabilidad de Red Ciudadana </h1>
+                        <p class="my-4" style="font-size: 25px!important;">Tiene como objetivo central facilitar la colaboración y la integración de datos entre entidades públicas y privadas en Guatemala. <br>
                             obtener datos, documentos y expedientes <br>
                             de los órganos de la administración del estado
                         </p>
@@ -44,9 +44,9 @@ permalink: "index.html"
                     <div class="col-lg-4 my-4 text-center">
                         <div class="bg-white-green h-100 p-4" style="border-radius: 10px;">
                             <div style="height: 100px; width: 100px; margin: 20px auto; border-radius: 50%; background-color: #03324e;"></div>
-                            <h1 class="text-titles">Políticas y Normas</h1>
+                            <h1 class="text-titles">Programa de Formación</h1>
                             <p class="mt-4">
-                                Reimaginando el futuro con innovación: Nuestro Gobierno Digital impulsa soluciones creativas y tecnologías avanzadas para mejorar la vida de todos en Guatemala.
+                                Capacitación a funcionarios públicos y representantes de entidades privadas en mejores prácticas y tecnologías de interoperabilidad.
                             </p>
                         </div>
                     </div>
@@ -54,9 +54,9 @@ permalink: "index.html"
                     <div class="col-lg-4 my-4 text-center">
                         <div class="bg-white-green h-100 p-4" style="border-radius: 10px;">
                             <div style="height: 100px; width: 100px; margin: 20px auto; border-radius: 50%; background-color: #03324e;"></div>
-                            <h3 class="text-titles">Tecnologías</h3>
+                            <h3 class="text-titles">Mediciones y Evaluación</h3>
                             <p class="mt-4">
-                                Transparencia como base de la confianza: Nuestro Gobierno Digital se compromete a una gestión abierta y clara, donde cada acción y decisión es accesible para el escrutinio y participación de todos
+                                Implementación de indicadores y métricas para evaluar el impacto de la interoperabilidad en la eficiencia administrativa y la satisfacción ciudadana.
                             </p>
                         </div>
                     </div>
@@ -64,9 +64,9 @@ permalink: "index.html"
                     <div class="col-lg-4 my-4 text-center">
                         <div class="bg-white-green h-100 p-4" style="border-radius: 10px;">
                             <div style="height: 100px; width: 100px; margin: 20px auto; border-radius: 50%; background-color: #03324e;"></div>    
-                            <h3 class="text-titles">Adopción Digital</h3>
+                            <h3 class="text-titles">Centro de Asistencia Técnica</h3>
                             <p class="mt-4">
-                                Accesibilidad para todos: Nuestro Gobierno Digital se esfuerza por eliminar barreras y crear servicios inclusivos, asegurando que cada ciudadano tenga las mismas oportunidades para acceder a la información y los servicios digitales.    
+                                Provisión de soporte técnico continuo a las entidades participantes para la implementación y mantenimiento de soluciones de interoperabilidad.
                             </p>
                         </div>
                     </div>
@@ -84,14 +84,13 @@ permalink: "index.html"
                     <div class="col-lg-6 my-4">
                         <h1 class="text-titles">¿Qué es Interoperabilidad?</h1>
                         <p class="mt-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas. Gravida cum sociis natoque penatibus et.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas. Gravida cum sociis natoque penatibus et.
+                            La interoperabilidad gubernamental se refiere a la capacidad de las instituciones públicas para trabajar juntas de manera eficiente mediante el intercambio de información y el uso compartido de sistemas tecnológicos. En Guatemala, la implementación de sistemas digitales en las instituciones públicas ha sido un proceso aislado, con soluciones específicas para cada entidad sin una integración adecuada entre ellas. Esto ha llevado a una fragmentación de la información y a una gobernanza menos eficiente.
                         </p>
-                        <p class="mt-4">
+                        <!-- <p class="mt-4">
                             <strong>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas. Gravida cum sociis natoque penatibus et.
                             </strong>
-                        </p>
+                        </p> -->
                     </div>
 
                     <div class="col-lg-6 my-4">
@@ -117,7 +116,17 @@ permalink: "index.html"
                         <!-- <a href="#" class="btn">Ir a productos <i class="fa-solid fa-right-long"></i></a> -->
                     </div>
 
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    {% for trans in collections.transformacion | limit(3)%}
+                    <div class="col-lg-4 my-4 text-center">
+                        <a href="{{trans.url}}"><div class="cuadro_plataformas">
+                            <img src="{{trans.data.image}}">
+                            <h2 class="text-titles hover_white">{{trans.data.title}}</h2>
+                            <p>{{trans.data.description}}</p>
+                        </div></a>
+                    </div>
+                    {% endfor %}
+
+                    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
@@ -154,7 +163,7 @@ permalink: "index.html"
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
