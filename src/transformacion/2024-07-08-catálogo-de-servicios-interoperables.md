@@ -1,6 +1,6 @@
 ---
 title: Catálogo de Servicios Interoperables
-image: /assets/cms/td-49.png
+image: /assets/cms/td-46.png
 description: Se desarrollará un catálogo de servicios públicos y privados.
 date: 2024-07-08T18:33:52.019Z
 tiempo: 10 mins
