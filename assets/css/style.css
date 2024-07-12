@@ -19790,6 +19790,12 @@ label.checkbox {
   padding: 2%;
 }
 
+.iniciativas-block{
+  display: block;
+  background-color: #f9fbfc;
+  padding: 2%;
+}
+
 .recursos{
   display: flex;
   background-color: #f9fbfc;
