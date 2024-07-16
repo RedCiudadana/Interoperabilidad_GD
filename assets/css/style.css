@@ -19811,6 +19811,19 @@ label.checkbox {
   height: 100%;
 }
 
+.cuadro_plataformas2{
+  text-align: center;
+  background-color: #fff;
+  padding: 15% 10%;
+  border-radius: 15px;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.cuadro_plataformas2 img{
+  width: 80%;
+}
+
 .cuadro_plataformas h2{
   margin-bottom: 5px;
 }
