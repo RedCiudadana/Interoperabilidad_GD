@@ -98,53 +98,15 @@
                       <!-- <a href="#" class="btn">Ir a productos <i class="fa-solid fa-right-long"></i></a> -->
                   </div>
 
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/gobierno-digital/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-46.png">
-                          <h2 class="text-titles hover_white">Gobierno Digital</h2>
-                          <p>Integración y eficiencia en cada clic.</p>
-                      </div></a>
-                  </div>
-
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/interoperabilidad/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-47.png">
-                          <h2 class="text-titles hover_white">Interoperabilidad</h2>
-                          <p>Sistemas conectados para una gestión pública sin barreras.</p>
-                      </div></a>
-                  </div>
-
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/datos-abiertos/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-48.png">
-                          <h2 class="text-titles hover_white">Datos Abiertos</h2>
-                          <p>Información pública al alcance de todos, fortaleciendo la transparencia y la rendición de cuentas.</p>
-                      </div></a>
-                  </div>
-
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/accesibilidad-e-inclusión-digital/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-49.png">
-                          <h2 class="text-titles hover_white">Accesabilidad e Inclusión Digital</h2>
-                          <p>Comprometidos con un acceso igualitario a la información y los servicios digitales.</p>
-                      </div></a>
-                  </div>
-
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/tecnologías-emergentes/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-50.png">
-                          <h2 class="text-titles hover_white">Tecnologías Emergentes</h2>
-                          <p>Innovando para el futuro de Guatemala con las últimas tecnologías.</p>
-                      </div></a>
-                  </div>
-
-                  <div class="col-lg-4 my-4 text-center">
-                      <a href="/transformacion/infraestructura-pública-digital/index.html"><div class="cuadro_plataformas">
-                          <img src="/assets/img/iconos/TD-51.png">
-                          <h2 class="text-titles hover_white">Infraestructura Pública Digital</h2>
-                          <p>Construyendo las bases para un Gobierno Digital sólido y sostenible.</p>
-                      </div></a>
-                  </div>
+                  {% for trans in collections.transformacion | limit(3)%}
+                    <div class="col-lg-4 my-4 text-center">
+                        <a href="{{trans.url}}"><div class="cuadro_plataformas">
+                            <img src="{{trans.data.image}}">
+                            <h2 class="text-titles hover_white">{{trans.data.title}}</h2>
+                            <p>{{trans.data.description}}</p>
+                        </div></a>
+                    </div>
+                    {% endfor %}
 
               </div>
           </div>

@@ -19792,8 +19792,9 @@ label.checkbox {
 
 .iniciativas-block{
   display: block;
-  background-color: #f9fbfc;
+  /*background-color: #f9fbfc;*/
   padding: 2%;
+  height: 100%!important;
 }
 
 .recursos{
