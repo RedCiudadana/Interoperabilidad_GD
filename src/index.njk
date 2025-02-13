@@ -223,11 +223,13 @@ permalink: "index.html"
                     <div class="col-lg-12">
                         <div class="row">
                             {% for recurso in collections.recursos %}
-                            <div class="iniciativas-block my-4 col-lg-4 h-100">
-                                <img class="mb-4" src="{{recurso.data.image}}">
-                                <h2 class="text-titles">{{recurso.data.title}}</h2>
-                                <p>{{recurso.data.description}}</p>
-                                <a class="btn" href="{{recurso.data.recurso}}" target="_blank">Descargar <i class="fa-solid fa-right-long"></i></a>
+                            <div class="my-4 col-lg-4 h-100">
+                                <div class="recursos-block">
+                                    <img class="mb-4" src="{{recurso.data.image}}">
+                                    <h2 class="text-titles">{{recurso.data.title}}</h2>
+                                    <p>{{recurso.data.description}}</p>
+                                    <a class="btn" href="{{recurso.data.recurso}}" target="_blank">Descargar <i class="fa-solid fa-right-long"></i></a>
+                                </div>
                             </div>
                             {% endfor %}
                         </div>

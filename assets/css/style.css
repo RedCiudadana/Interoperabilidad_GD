@@ -19909,3 +19909,45 @@ label.checkbox {
   width: 160px;
   height: 51px;
 }
+
+.content-blog{
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media only screen and (max-width: 960px) {
+  .content-blog{
+    width: 100%;
+  }
+}
+
+
+.content-blog h4, .content-blog h3, .content-blog h2{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.content-blog p{
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.recursos-block h2{
+  font-size: 20px!important;
+}
+
+.recursos-block p{
+  font-size: 15px!important;
+}
+
+.recursos-block img{
+  width: 30%;
+  margin: auto;
+}
+
+.recursos-block{
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}

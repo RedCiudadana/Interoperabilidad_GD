@@ -43,11 +43,15 @@ permalink: "iniciativas/index.html"
                   <div class="col-lg-12">
                     {% for iniciativa in collections.iniciativas %}
                     <div class="iniciativas my-4">
-                        <img style="width: 30%;" src="{{iniciativa.data.image}}">
-                        <div class="px-6">
-                            <h2 class="text-titles">{{iniciativa.data.title}}</h2>
-                            <p>{{iniciativa.data.description}}</p>
-                            <a class="btn" href="{{iniciativa.url}}">Leer Más <i class="fa-solid fa-right-long"></i></a>
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <img style="width: 100%;" src="{{iniciativa.data.image}}">
+                            </div>
+                            <div class="col-lg-9">
+                                <h2 class="text-titles">{{iniciativa.data.title}}</h2>
+                                <p>{{iniciativa.data.description}}</p>
+                                <a class="btn" href="{{iniciativa.url}}">Leer Más <i class="fa-solid fa-right-long"></i></a>
+                            </div>
                         </div>
                     </div>
                     {% endfor %}

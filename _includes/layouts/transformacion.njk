@@ -44,12 +44,14 @@
       <div class="row py-5">
         <div class="col-lg-12 my-5">
 
-          <!--autor correo fecha-->
-          <p>
-            {{ date|dateFormat('DD/MM/YYYY')}}
-          </p>
-          <br><br>
-          {{ content | safe}}
+          <div class="content-blog">
+            <!--autor correo fecha-->
+            <p>
+              {{ date|dateFormat('DD/MM/YYYY')}}
+              <br><br>
+            </p>
+            {{ content | safe}}
+          </div>
         </div>
         
       </div>
