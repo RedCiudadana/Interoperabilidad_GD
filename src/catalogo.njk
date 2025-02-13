@@ -50,12 +50,12 @@ permalink: "catalogo/{{ pagination.pageNumber + 1}}/index.html"
                     <div class="col-lg-4 my-4">
                         <div class="catalogo-card">
                             <div class="catalogo-header">
-                                <h5 class="catalogo-title">{{cata.ID}} | {{cata.Entidad}}</h5>
+                                <h5 class="catalogo-title">{{cata.ID}} | {{cata['Nombre del Servicio\/API']}}</h5>
                             </div>
                             <div class="catalogo-body">
-                                <p>{{cata['Categoria']}}</p>
+                                <p><b>Categoría:</b> {{cata['Categoria']}}</p>
                                 <hr>
-                                <p>{{cata['Nombre del Servicio\/API']}}</p>
+                                <p><b>Entidad:</b> {{cata.Entidad}}</p>
                                 <hr>
                                 <div class="row mb-4">
                                     <div class="col-lg-4">
