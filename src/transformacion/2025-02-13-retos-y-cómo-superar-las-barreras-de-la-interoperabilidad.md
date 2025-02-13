@@ -1,5 +1,5 @@
 ---
-title: "# **Retos y cómo superar las barreras de la interoperabilidad**"
+title: Retos y cómo superar las barreras de la interoperabilidad
 image: /assets/cms/td-49.png
 description: Desde problemas técnicos hasta barreras organizativas y legales,
   cada obstáculo requiere estrategias específicas para ser superado.
