@@ -19974,3 +19974,16 @@ label.checkbox {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+.linea-gris{
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 960px) {
+  .linea-gris{
+    display: none;
+  }
+}
